@@ -17,12 +17,12 @@ body{
 }
 
 form{
-    height: 850px;  
+    height: auto;  
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 70%;
+    top: 95%;
     left: 50%;
     bottom: auto;
     border-radius: 10px;
@@ -78,6 +78,13 @@ button{
     cursor: pointer;
 }
 
+.background-input{
+    background-color: rgba(255,255,255,0.13)!important;
+}
+
+.background2-input{
+    background-color: #9A66AB!important;
+}
 
 @media only screen and (max-width: 600px) {
     form {
@@ -87,4 +94,10 @@ button{
     button {
         font-size: 16px;
     }
+}
+
+/* Cambia el color de los mensaje de error */
+
+#ageError,#usernameError,#emailError,#passwordError,#nameError,#apeError,#fechaError, p {
+    color: red !important; 
 }

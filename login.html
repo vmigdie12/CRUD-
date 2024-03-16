@@ -8,19 +8,28 @@
         <link rel="icon" href="./img/favicon fogin.jpg" type="image/x-icon">
         
     </head>
-    <body>
-        
-        <form>
-            <h3>Login</h3>
+    <form id="loginForm">
+        <h3>Login</h3>
+    
+        <label for="usernameLogin">Usuario</label>
+        <input type="text" name="usernameLogin" id="usernameLogin" placeholder="Usuario" required>
+        <div id="usernameError" class="error"></div>
+    
+        <label for="passwordLogin">Contraseña</label>
+        <input type="password" name="passwordLogin" id="passwordLogin" placeholder="Contraseña" required>
+        <div id="passwordError" class="error"></div>
+    
+        <button type="button" name="buttonLogin" id="buttonLogin" onclick="validateLoginForm()">Send</button>
+    </form>
+    
+    <style>
+        .error {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
+    
+    <script src="./js/login.js"> </script>
 
-            <label for="usernameLogin">Usuario</label>
-            <input type="text" name ="usernameLogin" id = "usernameLogin" placeholder="Usuario" required>
-
-            <label for="passwordLogin">Contraseña</label>
-            <input type="password" name = "passwordLogin" id="passwordLogin" placeholder="Contraseña" required>
-
-            <button type="submit" name = "buttonLogin" id="buttonLogin">Log In</button>
-            
-        </form> 
     </body>
     </html>
